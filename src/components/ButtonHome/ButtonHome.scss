@@ -1,0 +1,21 @@
+@use './../../utilities.scss' as u;
+
+.link-home{
+    display: block;
+    width: 200px;
+    padding: 1em;
+    border: 2px solid u.$white;
+    color: u.$green;
+    text-decoration: none;
+    background-color: u.$black;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em auto;
+    &:hover{
+        color: u.$black;
+        background-color: u.$white;
+        cursor: pointer;
+        transition: .25s;
+    }
+}

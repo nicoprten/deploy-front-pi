@@ -1,0 +1,89 @@
+@use './../../utilities.scss' as u;
+
+.container-detail{
+    margin: 2em;
+    background-color: lighten(u.$black, 10%);
+    border-radius: 5px;
+    .container-image{
+        position: relative;
+        .detail-title{
+            font-size: 1.5em;
+            position: absolute;
+            left: 1em;
+            top: 0;
+            margin: 0;
+            text-align: center;
+            color: u.$black;
+            background-color: u.$green;
+            padding: .5em;
+            border-radius: 0 0 5px 5px;
+        }
+        .detail-image{
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+            object-fit: cover;
+            height: 330px;
+        }
+        .detail-rating{
+            position: absolute;
+            top: 0;
+            right: 1em;
+            color: u.$green;
+            background-color: u.$black;
+            margin: 0;
+            padding: 1em .5em .5em .5em;
+            border-radius: 0 0 5px 5px;
+        }
+        .detail-released{
+            position: absolute;
+            bottom: -0.3em;
+            right: 5em;
+            margin: 0;
+            background-color: u.$black;
+            padding: .5em;
+            text-align: center;
+            border: 2px solid u.$white;
+            border-radius: 5px;
+            box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 85%);
+        }
+    }
+    .detail-desc{
+        padding: 0 1em;
+        font-family: "Oswald";
+    }
+    .platform-list{
+        list-style-type: none;
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 1em;
+        flex-wrap: wrap;
+        .detail-platform{
+            border: 2px solid u.$white;
+            border-radius: 5px;
+            padding: .5em;
+            color: u.$green;
+            border: 2px solid u.$black;
+        }
+    }
+    .button-back{
+        display: inline-block;
+        width: 100%;
+        color: u.$white;
+        text-decoration: none;
+        background-color: darken(u.$black, 10%);
+        text-align: center;
+        font-size: 1.2em;
+        border-radius: 0 0 5px 5px;
+        padding: .5em;
+        box-sizing: border-box;
+        &:hover{
+            cursor: pointer;
+            background-color: u.$white;
+            color: u.$black;
+            transition: .3s;
+        }
+    }
+}

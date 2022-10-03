@@ -1,0 +1,47 @@
+@use './../../utilities.scss' as u;
+
+.container-filter-order{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    gap: 1em;
+    .container-filter{
+        display: flex;
+        flex-direction: column;
+        // gap: .5em;
+        border: 2px solid u.$green;
+        border-radius: 15px;
+        h2{
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+            padding: .5em;
+            margin: 0;
+            background-color: u.$green;
+            color: u.$black;
+            text-align: center;
+        }
+        .filter-genre, .filter-createdInDb, .order-alphabet, .order-rating{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            select{
+                background-color: u.$black;
+                color: u.$white;
+                font-family: 'Oswald';
+                // border: none;
+                font-size: 1em;
+                text-align: center;
+                padding: 0 .5em;
+                option{
+                    padding: 0;
+                }
+            }
+        }
+        .filter-createdInDb, .order-rating{
+            select{
+                border-radius: 0 0 15px 15px;
+            }
+        }
+    }
+}

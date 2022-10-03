@@ -1,0 +1,56 @@
+@use './../../utilities.scss' as u;
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin: 2em 4em;
+    input, textarea, select{
+        font-family: 'Oswald';
+        background-color: u.$white;
+        color: u.$black;
+        border: none;
+        padding: .5em;
+    }
+    h3{
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0;
+        padding: 1em 0 .5em 0;
+        border-bottom: 2px solid u.$white;
+    }
+    .container-genres, .container-platforms{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+        justify-content: center;
+    }
+    .button-submit{
+        background-color: u.$green;
+        color: u.$black;
+        font-family: 'Oswald';
+        font-size: 1.2em;
+        border: none;
+        padding: .2em;
+        &:hover{
+            background-color: u.$white;
+            color: u.$black;
+            cursor: pointer;
+            transition: .3s;
+        }
+    }
+}
+.button-back-form{
+    color: u.$white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 2px solid u.$white;
+    display: inline-block;
+    padding: .5em;
+    margin: 1em 2.5em;
+    &:hover{
+        color: u.$black;
+        background-color: u.$white;
+        transition: .3s;
+    }
+}
