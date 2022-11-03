@@ -5,12 +5,13 @@
     justify-content: center;
     margin: 1em 0;
     gap: 1em;
-    .container-filter{
+    padding: 0 2em;
+    .container-filter, .container-order{
         display: flex;
         flex-direction: column;
-        // gap: .5em;
         border: 2px solid u.$green;
         border-radius: 15px;
+        width: 50%;
         h2{
             font-size: 1em;
             font-weight: bold;

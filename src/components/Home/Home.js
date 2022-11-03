@@ -49,7 +49,7 @@ function Home({ allGames, getGames, getGenres, searchFilters, orderBy }){
     return(
         <>
             <SearchGame handleOrder={handleOrder}/>
-            <div className='container-order'>
+            {/* <div className='container-order'>
                 <h2>ORDER</h2>
                 <div className='order-alphabet'>
                     <select defaultValue={'DEFAULT'} name='alphabet' onChange={(e) => handleOrder(e.target.value)}>
@@ -65,7 +65,7 @@ function Home({ allGames, getGames, getGenres, searchFilters, orderBy }){
                         <option value='higher'>Higher</option>
                     </select>
                 </div>
-            </div>
+            </div> */}
             <div className="container-home">
                 {currentGames.length > 0 ? currentGames.map((game) => 
                     <div className='card-game' key={game.id}>
